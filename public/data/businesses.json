@@ -1,0 +1,36 @@
+{
+  "businesses": [
+    {
+      "id": 1,
+      "name": "Agromercado Ciudad Delgado",
+      "category": "Local Market",
+      "location": "Ciudad Delgado",
+      "description": "Local market offering fresh produce and everyday food products.",
+      "image": "/images/businesses/agromercado-ciudad-delgado.png"
+    },
+    {
+      "id": 2,
+      "name": "K-Papas",
+      "category": "Fast Food",
+      "location": "Ciudad Delgado",
+      "description": "Local food business specializing in loaded fries and fast food.",
+      "image": "/images/businesses/k-papas-ciudad-delgado.png"
+    },
+    {
+      "id": 3,
+      "name": "La Mera Birria",
+      "category": "Mexican Food",
+      "location": "Ciudad Delgado",
+      "description": "Local food business specializing in birria-inspired dishes.",
+      "image": "/images/businesses/la-mera-birria-ciudad-delgado.png"
+    },
+    {
+      "id": 4,
+      "name": "Pupusería Mama Mila",
+      "category": "Salvadoran Food",
+      "location": "Ciudad Delgado",
+      "description": "Local food business offering traditional Salvadoran dishes.",
+      "image": "/images/businesses/pupuseria-mama-mila.png"
+    }
+  ]
+}

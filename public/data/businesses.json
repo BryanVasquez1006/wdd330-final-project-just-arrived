@@ -6,7 +6,7 @@
       "category": "Local Market",
       "location": "Ciudad Delgado",
       "description": "Local market offering fresh produce and everyday food products.",
-      "image": "/images/businesses/agromercado-ciudad-delgado.png"
+      "image": "/images/businesses/agromercado-ciudad-delgado.webp"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "category": "Fast Food",
       "location": "Ciudad Delgado",
       "description": "Local food business specializing in loaded fries and fast food.",
-      "image": "/images/businesses/k-papas-ciudad-delgado.png"
+      "image": "/images/businesses/k-papas-ciudad-delgado.webp"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "category": "Mexican Food",
       "location": "Ciudad Delgado",
       "description": "Local food business specializing in birria-inspired dishes.",
-      "image": "/images/businesses/la-mera-birria-ciudad-delgado.png"
+      "image": "/images/businesses/la-mera-birria-ciudad-delgado.webp"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "category": "Salvadoran Food",
       "location": "Ciudad Delgado",
       "description": "Local food business offering traditional Salvadoran dishes.",
-      "image": "/images/businesses/pupuseria-mama-mila.png"
+      "image": "/images/businesses/pupuseria-mama-mila.webp"
     }
   ]
 }

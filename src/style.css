@@ -1,6 +1,6 @@
 :root {
   --pitch-black: #0a0903;
-  --red: #ff0000;
+  --red: #c20c0c;
   --princeton-orange: #ff8200;
   --amber-gold: #ffc100;
   --vanilla-custard: #ffeaae;
@@ -16,6 +16,7 @@ body {
   justify-content: space-between;
   background-color: var(--pitch-black);
   padding: 35px;
+  border-bottom: 4px solid var(--princeton-orange);
 }
 
 .logo-container {
@@ -23,10 +24,49 @@ body {
   align-items: center;
 }
 
+.bi-cart-fill {
+  animation-name: cartEntrance;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
 .logo-text {
   font-weight: 900;
-  color: var(--vanilla-custard);
+  color: white;
+  animation-name: textEntrance;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
+
+.cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--red);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -55%;
+  animation-name: cartEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.cart-container {
+  position: relative;
+}
+
+#biz-logo {
+  width: 100px;
+  height: auto;
+  animation-name: motorcycleEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+
 .order-prompt {
   text-align: center;
   font-size: 50px;
@@ -78,14 +118,29 @@ body {
 }
 
 .business-card {
-  border: 1px solid black;
   aspect-ratio: 1/1;
-}
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
 
-.biz-images {
-  width: 100%;
-  height: 100%;
-}
+  transition:
+  transform 0.3s ease,
+  box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-20px);
+    box-shadow: 3px 15px 15px 3px;
+  }
+
+  & img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    transform: scale(1.05);
+  }  
+} 
+
 
 .site-footer {
   background-color: var(--pitch-black);
@@ -190,6 +245,33 @@ body {
   }
 }
 
-#biz-logo {
-  width: 100px;
+
+@keyframes motorcycleEntrance {
+  from {
+    transform: translateX(-100vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes textEntrance {
+  from {
+    transform: translateY(-100vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes cartEntrance {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }

@@ -5,7 +5,7 @@ export default function  displayFooter () {
      
       <div class="footer-content">
         <div class="footer-brand">
-          <img src="/images/just-arrive-logo.png" alt="JustArrived! logo" />
+          <img src="/images//businesses/just-arrive-logo.webp" alt="JustArrived! logo" width="500" height="500" />
           <h2>JustArrived!</h2>
           <p>Local favorites, delivered fast.</p>
         </div>

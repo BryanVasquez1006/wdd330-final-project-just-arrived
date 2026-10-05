@@ -66,7 +66,6 @@ body {
   animation-timing-function: ease-out;
 }
 
-
 .order-prompt {
   text-align: center;
   font-size: 50px;
@@ -124,23 +123,22 @@ body {
   cursor: pointer;
 
   transition:
-  transform 0.3s ease,
-  box-shadow 0.3s ease;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-20px);
-    box-shadow: 3px 15px 15px 3px;
+    box-shadow: 3px 15px 15px 3px rgb(34, 34, 34);
   }
 
-  & img{
+  & img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
     transition: transform 0.4s ease;
     transform: scale(1.05);
-  }  
-} 
-
+  }
+}
 
 .site-footer {
   background-color: var(--pitch-black);
@@ -220,6 +218,19 @@ body {
   margin: 0;
 }
 
+.products-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.products-card {
+  border: 1px solid black;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
   .footer-content {
@@ -244,7 +255,6 @@ body {
     align-items: center;
   }
 }
-
 
 @keyframes motorcycleEntrance {
   from {

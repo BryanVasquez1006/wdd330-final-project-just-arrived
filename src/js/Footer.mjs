@@ -1,7 +1,7 @@
-export default function  displayFooter () {
-    const footerElement = document.querySelector("footer");
+export default function displayFooter() {
+  const footerElement = document.querySelector("footer");
 
-    const footerTemplate = `
+  const footerTemplate = `
      
       <div class="footer-content">
         <div class="footer-brand">
@@ -30,6 +30,5 @@ export default function  displayFooter () {
         </div>
       </div>`;
 
-    footerElement.innerHTML = footerTemplate;
-      
+  footerElement.innerHTML = footerTemplate;
 }

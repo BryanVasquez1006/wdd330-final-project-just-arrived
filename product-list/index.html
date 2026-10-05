@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="Discover local businesses and order your favorite products for fast local delivery with JustArrived!">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>JustArrived! | Product List</title>
+    <script type="module" src="/src/js/products-list.js"></script>
+  </head>
+  <body data-page="product-list">
+    <nav id="navigation"></nav>
+    <main>
+      <div class="search wrapper">
+        <h1 class="order-prompt">What would you like to order today?</h1>
+        <div class="search-bar">
+          <input
+            type="search"
+            id="search"
+            placeholder="Search for products..."
+          />
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="white"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </div>
+      </div>
+      <section class="product-list-section">
+        <h2 class="our-biz">Mama Mila's products</h2>
+        <div class="products-list-grid">
+                <article class="products-card">
+                    <img src="" alt="">
+                    <p>product name</p>
+                    <p>price: $0.0</p>
+                    <button class="action-buttons" type="button" aria-label="Decrease quantity">-</button>
+                    <span class="product-quantity">0</span>
+                    <button class="action-buttons" type="button" aria-label="Increase quantity">+</button>
+                </article>
+                <article class="products-card">
+                    <p>product 2</p>
+                </article>
+                <article class="products-card">
+                    <p>product 3</p>
+                </article>
+                <article class="products-card">
+                    <p>product 4</p>
+                </article>
+                <article class="products-card">
+                    <p>product 5</p>
+                </article>
+                <article class="products-card">
+                    <p>product 6</p>
+                </article>
+                <article class="products-card">
+                    <p>product 7</p>
+                </article>
+                <article class="products-card">
+                    <p>product 8</p>
+                </article>
+              </a>
+            </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+
+    </footer>
+  </body>
+</html>

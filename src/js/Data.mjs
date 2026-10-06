@@ -4,6 +4,5 @@ export async function getData(pathUrl) {
     throw new Error(`Oops, something went wrong. Status: ${response.status}`);
   }
   const data = await response.json();
-  console.log(data);
   return data;
 }

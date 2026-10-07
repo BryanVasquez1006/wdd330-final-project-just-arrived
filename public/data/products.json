@@ -5,1025 +5,1168 @@
       "businessId": 1,
       "name": "Frijol",
       "category": "Grains",
-      "price": 0.7
+      "price": 0.7,
+      "imageQuery": "beans"
     },
     {
       "id": 102,
       "businessId": 1,
       "name": "Arroz",
       "category": "Grains",
-      "price": 0.25
+      "price": 0.25,
+      "imageQuery": "rice"
     },
     {
       "id": 103,
       "businessId": 1,
       "name": "Tomate grande",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "tomato"
     },
     {
       "id": 104,
       "businessId": 1,
       "name": "Tomate mediano",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "tomato"
     },
     {
       "id": 105,
       "businessId": 1,
       "name": "Tomate pequeño",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "tomato"
     },
     {
       "id": 106,
       "businessId": 1,
       "name": "Cebolla blanca",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "white onion"
     },
     {
       "id": 107,
       "businessId": 1,
       "name": "Cebolla morada mediana",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "red onion"
     },
     {
       "id": 108,
       "businessId": 1,
       "name": "Cebolla morada pequeña",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "red onion"
     },
     {
       "id": 109,
       "businessId": 1,
       "name": "Cebolla amarilla",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "yellow onion"
     },
     {
       "id": 110,
       "businessId": 1,
       "name": "Repollo grande",
       "category": "Vegetables",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "cabbage"
     },
     {
       "id": 111,
       "businessId": 1,
       "name": "Repollo mediano",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "cabbage"
     },
     {
       "id": 112,
       "businessId": 1,
       "name": "Repollo pequeño",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "cabbage"
     },
     {
       "id": 113,
       "businessId": 1,
       "name": "Papa Russet",
       "category": "Vegetables",
-      "price": 0.5
+      "price": 0.5,
+      "imageQuery": "russet potato"
     },
     {
       "id": 114,
       "businessId": 1,
       "name": "Papa grande",
       "category": "Vegetables",
-      "price": 0.35
+      "price": 0.35,
+      "imageQuery": "potato"
     },
     {
       "id": 115,
       "businessId": 1,
       "name": "Papa pequeña",
       "category": "Vegetables",
-      "price": 0.2
+      "price": 0.2,
+      "imageQuery": "potato"
     },
     {
       "id": 116,
       "businessId": 1,
       "name": "Lechuga grande",
       "category": "Vegetables",
-      "price": 0.5
+      "price": 0.5,
+      "imageQuery": "lettuce"
     },
     {
       "id": 117,
       "businessId": 1,
       "name": "Lechuga mediana",
       "category": "Vegetables",
-      "price": 0.4
+      "price": 0.4,
+      "imageQuery": "lettuce"
     },
     {
       "id": 118,
       "businessId": 1,
       "name": "Lechuga pequeña",
       "category": "Vegetables",
-      "price": 0.2
+      "price": 0.2,
+      "imageQuery": "lettuce"
     },
     {
       "id": 119,
       "businessId": 1,
       "name": "Zanahoria",
       "category": "Vegetables",
-      "price": 0.25
+      "price": 0.25,
+      "imageQuery": "carrot"
     },
     {
       "id": 120,
       "businessId": 1,
       "name": "Brócoli pequeño",
       "category": "Vegetables",
-      "price": 0.75
+      "price": 0.75,
+      "imageQuery": "broccoli"
     },
     {
       "id": 121,
       "businessId": 1,
       "name": "Coliflor grande",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "cauliflower"
     },
     {
       "id": 122,
       "businessId": 1,
       "name": "Pepino",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "cucumber"
     },
     {
       "id": 123,
       "businessId": 1,
       "name": "Chile verde",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "green pepper"
     },
     {
       "id": 124,
       "businessId": 1,
       "name": "Güisquil grande",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "chayote"
     },
     {
       "id": 125,
       "businessId": 1,
       "name": "Güisquil mediano",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "chayote"
     },
     {
       "id": 126,
       "businessId": 1,
       "name": "Rábano mediano",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "radish"
     },
     {
       "id": 127,
       "businessId": 1,
       "name": "Rábano pequeño",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "radish"
     },
     {
       "id": 128,
       "businessId": 1,
       "name": "Berenjena grande",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "eggplant"
     },
     {
       "id": 129,
       "businessId": 1,
       "name": "Berenjena pequeña",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "eggplant"
     },
     {
       "id": 130,
       "businessId": 1,
       "name": "Ejote",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "green beans"
     },
     {
       "id": 131,
       "businessId": 1,
       "name": "Zucchini grande",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "zucchini"
     },
     {
       "id": 132,
       "businessId": 1,
       "name": "Zucchini mediano",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "zucchini"
     },
     {
       "id": 133,
       "businessId": 1,
       "name": "Remolacha",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "beetroot"
     },
     {
       "id": 134,
       "businessId": 1,
       "name": "Tamarindo",
       "category": "Fruits",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "tamarind"
     },
     {
       "id": 135,
       "businessId": 1,
       "name": "Maracuyá",
       "category": "Fruits",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "passion fruit"
     },
     {
       "id": 136,
       "businessId": 1,
       "name": "Jamaica",
       "category": "Fruits",
-      "price": 0.75
+      "price": 0.75,
+      "imageQuery": "hibiscus"
     },
     {
       "id": 137,
       "businessId": 1,
       "name": "Plátano grande",
       "category": "Fruits",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "plantain"
     },
     {
       "id": 138,
       "businessId": 1,
       "name": "Plátano mediano",
       "category": "Fruits",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "plantain"
     },
     {
       "id": 139,
       "businessId": 1,
       "name": "Plátano pequeño",
       "category": "Fruits",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "plantain"
     },
     {
       "id": 140,
       "businessId": 1,
       "name": "Limón",
       "category": "Fruits",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "lime"
     },
     {
       "id": 141,
       "businessId": 1,
       "name": "Naranja",
       "category": "Fruits",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "orange"
     },
     {
       "id": 142,
       "businessId": 1,
       "name": "Apio",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "celery"
     },
     {
       "id": 143,
       "businessId": 1,
       "name": "Piña mediana",
       "category": "Fruits",
-      "price": 1.5
+      "price": 1.5,
+      "imageQuery": "pineapple"
     },
     {
       "id": 144,
       "businessId": 1,
       "name": "Piña grande",
       "category": "Fruits",
-      "price": 1.9
+      "price": 1.9,
+      "imageQuery": "pineapple"
     },
     {
       "id": 145,
       "businessId": 1,
       "name": "Ñame",
       "category": "Vegetables",
-      "price": 0.9
+      "price": 0.9,
+      "imageQuery": "yam"
     },
     {
       "id": 146,
       "businessId": 1,
       "name": "Elote dulce amarillo",
       "category": "Vegetables",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "sweet corn"
     },
-
     {
       "id": 201,
       "businessId": 2,
       "name": "Cono de papa tradicional",
       "category": "Loaded Fries",
-      "price": 2.0
+      "price": 2.0,
+      "imageQuery": "loaded fries"
     },
     {
       "id": 202,
       "businessId": 2,
       "name": "Cono de papa nuggets",
       "category": "Loaded Fries",
-      "price": 3.0
+      "price": 3.0,
+      "imageQuery": "chicken nuggets fries"
     },
     {
       "id": 203,
       "businessId": 2,
       "name": "Cono de papa salchipapa",
       "category": "Loaded Fries",
-      "price": 3.0
+      "price": 3.0,
+      "imageQuery": "sausage fries"
     },
     {
       "id": 204,
       "businessId": 2,
       "name": "Cono de papa carne de res",
       "category": "Loaded Fries",
-      "price": 4.0
+      "price": 4.0,
+      "imageQuery": "beef fries"
     },
     {
       "id": 205,
       "businessId": 2,
       "name": "Cono de papa chicharrón",
       "category": "Loaded Fries",
-      "price": 4.0
+      "price": 4.0,
+      "imageQuery": "pork fries"
     },
     {
       "id": 206,
       "businessId": 2,
       "name": "Cono de papa camarón",
       "category": "Loaded Fries",
-      "price": 5.0
+      "price": 5.0,
+      "imageQuery": "shrimp fries"
     },
     {
       "id": 207,
       "businessId": 2,
       "name": "Hamburguesa de res",
       "category": "Burgers",
-      "price": 3.5
+      "price": 3.5,
+      "imageQuery": "beef burger"
     },
     {
       "id": 208,
       "businessId": 2,
       "name": "Hamburguesa combo",
       "category": "Burgers",
-      "price": 5.0
+      "price": 5.0,
+      "imageQuery": "burger fries"
     },
     {
       "id": 209,
       "businessId": 2,
       "name": "Hot dog colombiano",
       "category": "Hot Dogs",
-      "price": 2.8
+      "price": 2.8,
+      "imageQuery": "hot dog"
     },
     {
       "id": 210,
       "businessId": 2,
       "name": "Hot dog combo",
       "category": "Hot Dogs",
-      "price": 4.0
+      "price": 4.0,
+      "imageQuery": "hot dog fries"
     },
     {
       "id": 211,
       "businessId": 2,
       "name": "Dedos de queso",
       "category": "Sides",
-      "price": 3.5
+      "price": 3.5,
+      "imageQuery": "mozzarella sticks"
     },
     {
       "id": 212,
       "businessId": 2,
       "name": "Alas BBQ",
       "category": "Wings",
-      "price": 5.0
+      "price": 5.0,
+      "imageQuery": "bbq chicken wings"
     },
     {
       "id": 213,
       "businessId": 2,
       "name": "Alas Buffalo",
       "category": "Wings",
-      "price": 5.0
+      "price": 5.0,
+      "imageQuery": "buffalo chicken wings"
     },
     {
       "id": 214,
       "businessId": 2,
       "name": "Café americano",
       "category": "Drinks",
-      "price": 0.75
+      "price": 0.75,
+      "imageQuery": "black coffee"
     },
     {
       "id": 215,
       "businessId": 2,
       "name": "Café frozen",
       "category": "Drinks",
-      "price": 2.5
+      "price": 2.5,
+      "imageQuery": "iced coffee"
     },
     {
       "id": 216,
       "businessId": 2,
       "name": "Coca-Cola",
       "category": "Drinks",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "cola drink"
     },
     {
       "id": 217,
       "businessId": 2,
       "name": "Pepsi",
       "category": "Drinks",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "cola drink"
     },
     {
       "id": 218,
       "businessId": 2,
       "name": "Jugo Petit",
       "category": "Drinks",
-      "price": 0.8
+      "price": 0.8,
+      "imageQuery": "fruit juice"
     },
-
     {
       "id": 301,
       "businessId": 3,
       "name": "Pupusa de birria",
       "category": "Pupusas",
-      "price": 2.5
+      "price": 2.5,
+      "imageQuery": "pupusa"
     },
     {
       "id": 302,
       "businessId": 3,
       "name": "Pupusa de frijol con queso",
       "category": "Pupusas",
-      "price": 0.6
+      "price": 0.6,
+      "imageQuery": "pupusa"
     },
     {
       "id": 303,
       "businessId": 3,
       "name": "Pupusa revuelta",
       "category": "Pupusas",
-      "price": 0.6
+      "price": 0.6,
+      "imageQuery": "pupusa"
     },
     {
       "id": 304,
       "businessId": 3,
       "name": "Pupusa de queso",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 305,
       "businessId": 3,
       "name": "Pupusa de queso con loroco",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 306,
       "businessId": 3,
       "name": "Pupusa de queso con ayote",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 307,
       "businessId": 3,
       "name": "Pupusa de queso con salchicha",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 308,
       "businessId": 3,
       "name": "Pupusa de queso con mora",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 309,
       "businessId": 3,
       "name": "Pupusa de queso con tomate",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 310,
       "businessId": 3,
       "name": "Pupusa de queso con cebolla blanca",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 311,
       "businessId": 3,
       "name": "Pupusa de queso con cebolla morada",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 312,
       "businessId": 3,
       "name": "Pupusa de queso con cebolla salteada",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 313,
       "businessId": 3,
       "name": "Pupusa de queso con zanahoria",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 314,
       "businessId": 3,
       "name": "Pupusa de queso, zanahoria y ajo",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 315,
       "businessId": 3,
       "name": "Pupusa de queso con ajo",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 316,
       "businessId": 3,
       "name": "Pupusa de queso con chile jalapeño",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 317,
       "businessId": 3,
       "name": "Pupusa de queso con chile habanero",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 318,
       "businessId": 3,
       "name": "Pupusa de queso con chile verde",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 319,
       "businessId": 3,
       "name": "Pupusa de queso con jamón",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 320,
       "businessId": 3,
       "name": "Pupusa de queso con cilantro",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 321,
       "businessId": 3,
       "name": "Pupusa de queso con chipilín",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 322,
       "businessId": 3,
       "name": "Pupusa de queso con pollo",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 323,
       "businessId": 3,
       "name": "Pupusa de queso con chorizo",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 324,
       "businessId": 3,
       "name": "Pupusa de queso con camarones",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 325,
       "businessId": 3,
       "name": "Pupusa de queso con chicharrón",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 326,
       "businessId": 3,
       "name": "Plato de bocas",
       "category": "Appetizers",
-      "price": 10.0
+      "price": 10.0,
+      "imageQuery": "appetizer platter"
     },
     {
       "id": 327,
       "businessId": 3,
       "name": "Papas con chilli",
       "category": "Appetizers",
-      "price": 4.5
+      "price": 4.5,
+      "imageQuery": "chili cheese fries"
     },
     {
       "id": 328,
       "businessId": 3,
       "name": "Papas fritas",
       "category": "Appetizers",
-      "price": 4.0
+      "price": 4.0,
+      "imageQuery": "french fries"
     },
     {
       "id": 329,
       "businessId": 3,
       "name": "Choripán argentino con chorizo",
       "category": "Appetizers",
-      "price": 2.0
+      "price": 2.0,
+      "imageQuery": "chorizo sandwich"
     },
     {
       "id": 330,
       "businessId": 3,
       "name": "Hot dog",
       "category": "Fast Food",
-      "price": 1.75
+      "price": 1.75,
+      "imageQuery": "hot dog"
     },
     {
       "id": 331,
       "businessId": 3,
       "name": "Nachos con escabeche, queso y chilli",
       "category": "Appetizers",
-      "price": 2.75
+      "price": 2.75,
+      "imageQuery": "nachos cheese"
     },
     {
       "id": 332,
       "businessId": 3,
       "name": "Nachos con birria",
       "category": "Appetizers",
-      "price": 3.75
+      "price": 3.75,
+      "imageQuery": "birria nachos"
     },
     {
       "id": 333,
       "businessId": 3,
       "name": "Pan con ajo",
       "category": "Sides",
-      "price": 1.75
+      "price": 1.75,
+      "imageQuery": "garlic bread"
     },
     {
       "id": 334,
       "businessId": 3,
       "name": "Taco cono frito",
       "category": "Mexican Food",
-      "price": 4.99
+      "price": 4.99,
+      "imageQuery": "fried taco"
     },
     {
       "id": 335,
       "businessId": 3,
       "name": "Hamburguesa de birria",
       "category": "Burgers",
-      "price": 6.99
+      "price": 6.99,
+      "imageQuery": "birria burger"
     },
     {
       "id": 336,
       "businessId": 3,
       "name": "Hamburguesa de res",
       "category": "Burgers",
-      "price": 5.5
+      "price": 5.5,
+      "imageQuery": "beef burger"
     },
     {
       "id": 337,
       "businessId": 3,
       "name": "Hamburguesa de pollo",
       "category": "Burgers",
-      "price": 4.5
+      "price": 4.5,
+      "imageQuery": "chicken burger"
     },
     {
       "id": 338,
       "businessId": 3,
       "name": "Hamburguesa de camarones",
       "category": "Burgers",
-      "price": 6.5
+      "price": 6.5,
+      "imageQuery": "shrimp burger"
     },
     {
       "id": 339,
       "businessId": 3,
       "name": "Hamburguesa de champiñones",
       "category": "Burgers",
-      "price": 4.99
+      "price": 4.99,
+      "imageQuery": "mushroom burger"
     },
-
     {
       "id": 401,
       "businessId": 4,
       "name": "Pupusa revuelta",
       "category": "Pupusas",
-      "price": 0.75
+      "price": 0.75,
+      "imageQuery": "pupusa"
     },
     {
       "id": 402,
       "businessId": 4,
       "name": "Pupusa de frijol con queso",
       "category": "Pupusas",
-      "price": 0.75
+      "price": 0.75,
+      "imageQuery": "pupusa"
     },
     {
       "id": 403,
       "businessId": 4,
       "name": "Pupusa de queso",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 404,
       "businessId": 4,
       "name": "Pupusa de queso con loroco",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 405,
       "businessId": 4,
       "name": "Pupusa de chicharrón con queso",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 406,
       "businessId": 4,
       "name": "Pupusa de ayote",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 407,
       "businessId": 4,
       "name": "Pupusa de mora",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 408,
       "businessId": 4,
       "name": "Pupusa de espinaca",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 409,
       "businessId": 4,
       "name": "Pupusa de jalapeño",
       "category": "Pupusas",
-      "price": 1.0
+      "price": 1.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 410,
       "businessId": 4,
       "name": "Pupusa de camarón",
       "category": "Pupusas",
-      "price": 1.5
+      "price": 1.5,
+      "imageQuery": "pupusa"
     },
     {
       "id": 411,
       "businessId": 4,
       "name": "Pupusa de pollo",
       "category": "Pupusas",
-      "price": 1.25
+      "price": 1.25,
+      "imageQuery": "pupusa"
     },
     {
       "id": 412,
       "businessId": 4,
       "name": "Pupusa hawaiana",
       "category": "Pupusas",
-      "price": 1.5
+      "price": 1.5,
+      "imageQuery": "pupusa"
     },
     {
       "id": 413,
       "businessId": 4,
       "name": "Pupusa La Suprema",
       "category": "Pupusas",
-      "price": 2.0
+      "price": 2.0,
+      "imageQuery": "pupusa"
     },
     {
       "id": 414,
       "businessId": 4,
       "name": "Pan con gallina",
       "category": "Salvadoran Food",
-      "price": 3.5
+      "price": 3.5,
+      "imageQuery": "chicken sandwich"
     },
     {
       "id": 415,
       "businessId": 4,
       "name": "Pan con pollo",
       "category": "Salvadoran Food",
-      "price": 3.5
+      "price": 3.5,
+      "imageQuery": "chicken sandwich"
     },
     {
       "id": 416,
       "businessId": 4,
       "name": "Jugo de naranja",
       "category": "Drinks",
-      "price": 1.5
+      "price": 1.5,
+      "imageQuery": "orange juice"
     },
     {
       "id": 417,
       "businessId": 4,
       "name": "Jugo de zanahoria",
       "category": "Drinks",
-      "price": 1.75
+      "price": 1.75,
+      "imageQuery": "carrot juice"
     },
     {
       "id": 418,
       "businessId": 4,
       "name": "Jugo de naranja con piña",
       "category": "Drinks",
-      "price": 2.0
+      "price": 2.0,
+      "imageQuery": "orange pineapple juice"
     },
     {
       "id": 419,
       "businessId": 4,
       "name": "Jugo de naranja con zanahoria",
       "category": "Drinks",
-      "price": 2.0
+      "price": 2.0,
+      "imageQuery": "orange carrot juice"
     },
     {
       "id": 420,
       "businessId": 4,
       "name": "Jugo de zanahoria con naranja",
       "category": "Drinks",
-      "price": 2.0
+      "price": 2.0,
+      "imageQuery": "carrot orange juice"
     },
     {
       "id": 421,
       "businessId": 4,
       "name": "Jugo de zanahoria con piña",
       "category": "Drinks",
-      "price": 2.0
+      "price": 2.0,
+      "imageQuery": "carrot pineapple juice"
     },
     {
       "id": 422,
       "businessId": 4,
       "name": "Frozen de piña",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "pineapple smoothie"
     },
     {
       "id": 423,
       "businessId": 4,
       "name": "Frozen de sandía",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "watermelon smoothie"
     },
     {
       "id": 424,
       "businessId": 4,
       "name": "Frozen de melón",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "melon smoothie"
     },
     {
       "id": 425,
       "businessId": 4,
       "name": "Frozen de fresa",
       "category": "Drinks",
-      "price": 2.5
+      "price": 2.5,
+      "imageQuery": "strawberry smoothie"
     },
     {
       "id": 426,
       "businessId": 4,
       "name": "Frozen de limón",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "lime smoothie"
     },
     {
       "id": 427,
       "businessId": 4,
       "name": "Frozen de chocolate",
       "category": "Drinks",
-      "price": 2.75
+      "price": 2.75,
+      "imageQuery": "chocolate milkshake"
     },
     {
       "id": 428,
       "businessId": 4,
       "name": "Frozen de galleta",
       "category": "Drinks",
-      "price": 2.75
+      "price": 2.75,
+      "imageQuery": "cookie milkshake"
     },
     {
       "id": 429,
       "businessId": 4,
       "name": "Frozen de café",
       "category": "Drinks",
-      "price": 2.75
+      "price": 2.75,
+      "imageQuery": "coffee frappe"
     },
     {
       "id": 430,
       "businessId": 4,
       "name": "Frozen de mocaccino",
       "category": "Drinks",
-      "price": 3.0
+      "price": 3.0,
+      "imageQuery": "mocha frappe"
     },
     {
       "id": 431,
       "businessId": 4,
       "name": "Banano con leche",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "banana milkshake"
     },
     {
       "id": 432,
       "businessId": 4,
       "name": "Fresas con leche",
       "category": "Drinks",
-      "price": 2.5
+      "price": 2.5,
+      "imageQuery": "strawberry milkshake"
     },
     {
       "id": 433,
       "businessId": 4,
       "name": "Zapote con leche",
       "category": "Drinks",
-      "price": 2.5
+      "price": 2.5,
+      "imageQuery": "mamey milkshake"
     },
     {
       "id": 434,
       "businessId": 4,
       "name": "Papaya con leche",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "papaya milkshake"
     },
     {
       "id": 435,
       "businessId": 4,
       "name": "Piña con leche",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "pineapple milkshake"
     },
     {
       "id": 436,
       "businessId": 4,
       "name": "Sandía con leche",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "watermelon smoothie"
     },
     {
       "id": 437,
       "businessId": 4,
       "name": "Melón con leche",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "melon smoothie"
     },
     {
       "id": 438,
       "businessId": 4,
       "name": "Chocolate con leche",
       "category": "Drinks",
-      "price": 2.5
+      "price": 2.5,
+      "imageQuery": "chocolate milk"
     },
     {
       "id": 439,
       "businessId": 4,
       "name": "Granola con leche",
       "category": "Drinks",
-      "price": 2.75
+      "price": 2.75,
+      "imageQuery": "granola milk"
     },
     {
       "id": 440,
       "businessId": 4,
       "name": "Avena con leche",
       "category": "Drinks",
-      "price": 2.25
+      "price": 2.25,
+      "imageQuery": "oatmeal milk"
     },
     {
       "id": 441,
       "businessId": 4,
       "name": "Avena con granola con leche",
       "category": "Drinks",
-      "price": 3.0
+      "price": 3.0,
+      "imageQuery": "oatmeal granola"
     },
     {
       "id": 442,
       "businessId": 4,
       "name": "Galleta con leche",
       "category": "Drinks",
-      "price": 2.5
+      "price": 2.5,
+      "imageQuery": "cookies milk"
     },
     {
       "id": 443,
       "businessId": 4,
       "name": "Piña colada",
       "category": "Drinks",
-      "price": 3.0
+      "price": 3.0,
+      "imageQuery": "pina colada"
     }
   ]
 }

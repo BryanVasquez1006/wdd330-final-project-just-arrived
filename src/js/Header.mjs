@@ -3,15 +3,17 @@ export default function displayHeader() {
 
   navElement.innerHTML = `
     <div class="logo-container">
-        <img
-        src="/images/businesses/just-arrive-logo.webp"
-        alt="business logo"
-        id="biz-logo"
-        width="500"
-        height="333"
-        />
+        <a href="../index.html">
+          <img
+          src="/images/businesses/just-arrive-logo.webp"
+          alt="business logo"
+          id="biz-logo"
+          width="500"
+          height="333"
+          />
+          <p class="logo-text">Just Arrived!</p>
+        </a>
 
-        <p class="logo-text">Just Arrived!</p>
       
     </div>
     <div class="cart-container">

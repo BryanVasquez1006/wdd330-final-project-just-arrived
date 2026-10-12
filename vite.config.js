@@ -6,6 +6,7 @@ export default defineConfig({
       input: {
         home: "/index.html",
         productList: "/product-list/index.html",
+        cartPage: "/cart-page/index.html",
       },
     },
   },

@@ -1,4 +1,8 @@
 import { getData } from "./Data.mjs";
+import { addProductsToCart, removeProductsFromCart } from "./Cart.mjs";
+import { getLocalStorage, setLocalStorage } from "./Utils.mjs";
+
+
 
 export default class ProductList {
   constructor(businessId) {
@@ -34,17 +38,39 @@ export default class ProductList {
     });
     let resolvedProductCards = await Promise.all(productCards);
     cardContainer.innerHTML = resolvedProductCards.join("");
+
+    addProductsToCart();
+    removeProductsFromCart();
   }
 
   productCardTemplate(product, imageURL) {
+
+
+    //retrieving cart
+    const cart = getLocalStorage("ja-cart") ?? [];
+
+    //finding product being selected
+    const selectedProduct = cart.find((item) => {
+      return item.productId === product.id
+    });
+    
+    const quantity = selectedProduct?.quantity ?? 0;
+console.log("Cart from localStorage:", cart);
+console.log("Selected product:", selectedProduct);
+console.log("Quantity to display:", quantity);
+
+console.log("Rendering product:", product.id);
+console.log("Stored quantity:", quantity);
     const card = `
                 <article class="products-card">
                     <img src="${imageURL}" alt="${product.name}" class="product-image" load="lazy" >
                     <p class="product-name">${product.name}</p>
                     <p class="product-price">$${product.price.toFixed(2)}</p>
-                    <button class="action-buttons" type="button" aria-label="Decrease quantity">-</button>
-                    <span class="product-quantity">0</span>
-                    <button class="action-buttons" type="button" aria-label="Increase quantity">+</button>
+                    <div class="cart-btns-container">
+                      <button class="action-buttons decrease-btn" type="button" aria-label="Decrease quantity" data-product-id="${product.id}">-</button>
+                      <span class="product-quantity">${quantity}</span>
+                      <button class="action-buttons increase-btn" data-product-id="${product.id}" type="button" aria-label="Increase quantity">+</button>          
+                    </div>
                 </article>
         `;
     return card;

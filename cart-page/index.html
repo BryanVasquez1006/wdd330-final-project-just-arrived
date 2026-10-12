@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="JustArrived cart page!" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>JustArrived! | Cart Page</title>
+    <script type="module" src="/src/js/cart.js"></script>
+  </head>
+
+  <body data-page="cart">
+    <nav id="navigation"></nav>
+
+    <main>
+      <h1 class="my-cart">My Cart</h1>
+
+      <div class="cart-grid">
+        <!-- Left column: Products -->
+        <section class="cart-products">
+          <div class="cart-biz-heading">
+            <h2>Your Cart Products:</h2>
+          </div>
+
+          <div class="cart-products-container">
+          </div>
+        </section>
+
+       
+
+        <!-- Right column: Order Summary -->
+        <aside class="order-summary">
+          <h2>Order Summary</h2>
+          <span class="summary-divider"></span>
+          <div class="price-section">
+            <p>Items: 3</p>
+            <p class="cart-price">$1.23</p>
+          </div>
+          <div class="price-section">     
+            <p>Delivery</p>
+            <p class="cart-price">$1.23</p>
+          </div>
+          <span class="summary-divider"></span>
+          <p class="cart-total">Total</p>
+          <p class="cart-final-price">$3.50</p>
+          <a class="default-button" href="/checkout-page">Proceed to checkout</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer"></footer>
+  </body>
+</html>

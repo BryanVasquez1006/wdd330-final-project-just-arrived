@@ -1,8 +1,7 @@
 import { getData } from "./Data.mjs";
 import { addProductsToCart, removeProductsFromCart } from "./Cart.mjs";
-import { getLocalStorage, setLocalStorage } from "./Utils.mjs";
-
-
+import { getLocalStorage } from "./Utils.mjs";
+import { getProductImage } from "./Images.mjs";
 
 export default class ProductList {
   constructor(businessId) {
@@ -32,7 +31,7 @@ export default class ProductList {
 
     //displaying the information of every card based in the filtered data for each business
     const productCards = this.filteredProducts.map(async (product) => {
-      let imageURL = await this.getProductImage(product.imageQuery);
+      let imageURL = await getProductImage(product.imageQuery);
 
       return this.productCardTemplate(product, imageURL);
     });
@@ -44,23 +43,21 @@ export default class ProductList {
   }
 
   productCardTemplate(product, imageURL) {
-
-
     //retrieving cart
     const cart = getLocalStorage("ja-cart") ?? [];
 
     //finding product being selected
     const selectedProduct = cart.find((item) => {
-      return item.productId === product.id
+      return item.productId === product.id;
     });
-    
-    const quantity = selectedProduct?.quantity ?? 0;
-console.log("Cart from localStorage:", cart);
-console.log("Selected product:", selectedProduct);
-console.log("Quantity to display:", quantity);
 
-console.log("Rendering product:", product.id);
-console.log("Stored quantity:", quantity);
+    const quantity = selectedProduct?.quantity ?? 0;
+    console.log("Cart from localStorage:", cart);
+    console.log("Selected product:", selectedProduct);
+    console.log("Quantity to display:", quantity);
+
+    console.log("Rendering product:", product.id);
+    console.log("Stored quantity:", quantity);
     const card = `
                 <article class="products-card">
                     <img src="${imageURL}" alt="${product.name}" class="product-image" load="lazy" >
@@ -74,20 +71,5 @@ console.log("Stored quantity:", quantity);
                 </article>
         `;
     return card;
-  }
-
-  async getProductImage(imageQuery) {
-    const pixabayKey = import.meta.env.VITE_PIXABAY_API_KEY;
-    const pixabayUrl = `https://pixabay.com/api/?key=${pixabayKey}&q=${imageQuery}&category=food&image_type=photo`;
-    const response = await fetch(pixabayUrl);
-    const imageData = await response.json();
-
-    if (imageData.hits.length === 0) {
-      if (imageQuery === "pupusa") {
-        return "/images/businesses/pupusas-product.webp";
-      }
-      return "";
-    }
-    return imageData.hits[0].webformatURL;
   }
 }

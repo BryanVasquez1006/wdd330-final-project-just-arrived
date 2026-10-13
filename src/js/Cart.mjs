@@ -1,109 +1,137 @@
 import { getLocalStorage, setLocalStorage } from "./Utils.mjs";
 import { getData } from "./Data.mjs";
+import { getProductImage } from "./Images.mjs";
 
 const CART_KEY = "ja-cart";
 const productsData = await getData("products.json");
-console.log(productsData);
-const cart = getLocalStorage(CART_KEY) ?? [];
+const businessData = await getData("businesses.json");
 
 //Function to add products to the cart
 export function addProductsToCart() {
-    const increaseBtns = document.querySelectorAll(".increase-btn");
-    increaseBtns.forEach((button) => {
-        button.addEventListener("click", () => {
-            const cart = getLocalStorage(CART_KEY) ?? [];
-            const productId = button.dataset.productId;
-            
-            //finding the product ID in the cart from LocalStorage and matching it with the dataset ID
+  const increaseBtns = document.querySelectorAll(".increase-btn");
+  increaseBtns.forEach((button) => {
+    button.addEventListener("click", () => {
+      const cart = getLocalStorage(CART_KEY) ?? [];
+      const productId = button.dataset.productId;
 
-            const selectedProduct = cart.find((item) => {
-                return item.productId === Number(productId);
-            });
+      //finding the product ID in the cart from LocalStorage and matching it with the dataset ID
 
-            //adding 1 to the "quantity" attribute
-            if(selectedProduct) {
-                selectedProduct.quantity ++;
-                setLocalStorage(CART_KEY, cart);
-                //updating the quantity counter in each card
-                const counterContainer = button.closest(".cart-btns-container");
-                const quantityElement = counterContainer.querySelector(".product-quantity");
-    
-                quantityElement.textContent = selectedProduct.quantity;
-            } else {
-                //Creating an object for the new product if it doesn't exist
-                const counterContainer = button.closest(".cart-btns-container");
-                const quantityElement = counterContainer.querySelector(".product-quantity");
+      const selectedProduct = cart.find((item) => {
+        return item.productId === Number(productId);
+      });
 
-                const newProduct = {
-                    productId: Number(productId),
-                    quantity: 1
-                };
-                cart.push(newProduct);
-                setLocalStorage(CART_KEY, cart);
-                quantityElement.textContent = newProduct.quantity;
-            };
-            console.log("SelectedProducts: ", selectedProduct);
-        });
+      //adding 1 to the "quantity" attribute
+      if (selectedProduct) {
+        selectedProduct.quantity++;
+        setLocalStorage(CART_KEY, cart);
+
+        //updating the quantity counter in each card
+        const counterContainer = button.closest(".cart-btns-container");
+        const quantityElement =
+          counterContainer.querySelector(".product-quantity");
+
+        quantityElement.textContent = selectedProduct.quantity;
+      } else {
+        //Creating an object for the new product if it doesn't exist
+        const counterContainer = button.closest(".cart-btns-container");
+        const quantityElement =
+          counterContainer.querySelector(".product-quantity");
+
+        const newProduct = {
+          productId: Number(productId),
+          quantity: 1,
+        };
+        cart.push(newProduct);
+        setLocalStorage(CART_KEY, cart);
+        quantityElement.textContent = newProduct.quantity;
+      }
+      //updating prices dinamically in the side section after the button is clicked
+      displayOrderSummaryAside();
+      console.log("SelectedProducts: ", selectedProduct);
     });
-};
+  });
+}
 
 export function removeProductsFromCart() {
-    const decreaseBtns = document.querySelectorAll(".decrease-btn");
-    decreaseBtns.forEach((button) => {
-        button.addEventListener("click", () => {
-            const cart = getLocalStorage(CART_KEY) ?? [];
-            const productId = button.dataset.productId;
+  const decreaseBtns = document.querySelectorAll(".decrease-btn");
+  decreaseBtns.forEach((button) => {
+    button.addEventListener("click", () => {
+      const cart = getLocalStorage(CART_KEY) ?? [];
+      const productId = button.dataset.productId;
 
-            const selectedProduct = cart.find((item) => {
-                return item.productId === Number(productId);
-            });
+      const selectedProduct = cart.find((item) => {
+        return item.productId === Number(productId);
+      });
 
-            //substracting 1 to the "quantity" attribute in the cart
-            if (selectedProduct && selectedProduct.quantity > 1) {
-                selectedProduct.quantity--;
-                setLocalStorage(CART_KEY, cart);
+      //substracting 1 to the "quantity" attribute in the cart
+      if (selectedProduct && selectedProduct.quantity > 1) {
+        selectedProduct.quantity--;
+        setLocalStorage(CART_KEY, cart);
+        displayOrderSummaryAside();
 
-                //Updating the quantity counter
-                const counterContainer = button.closest(".cart-btns-container");
-                const quantityElement = counterContainer.querySelector(".product-quantity");
+        //Updating the quantity counter
+        const counterContainer = button.closest(".cart-btns-container");
+        const quantityElement =
+          counterContainer.querySelector(".product-quantity");
 
-                quantityElement.textContent = selectedProduct.quantity;
-            };
-        });
-
-    })
-};
+        quantityElement.textContent = selectedProduct.quantity;
+      }
+    });
+  });
+}
 
 export function deleteCartProduct() {
-    
-    const deleteBtn = document.querySelectorAll(".delete-product");
+  const deleteBtn = document.querySelectorAll(".delete-product");
 
-    deleteBtn.forEach((button) => {
-        button.addEventListener("click", () => {
-            const cart = getLocalStorage(CART_KEY) ?? [];
-            const productId = button.dataset.productId;
-            //keeping the products that are not the ones the user selected for removal:
-            const updatedCart = cart.filter((item) => {
-                return item.productId !== Number(productId)
-            });
-            //updating cart
-            setLocalStorage(CART_KEY, updatedCart)
+  deleteBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      const cart = getLocalStorage(CART_KEY) ?? [];
+      const productId = button.dataset.productId;
+      //keeping the products that are not the ones the user selected for removal:
+      const updatedCart = cart.filter((item) => {
+        return item.productId !== Number(productId);
+      });
+      //updating cart
+      setLocalStorage(CART_KEY, updatedCart);
+      displayOrderSummaryAside();
 
-            //removing card from DOM
-            const productCard = button.closest(".cart-card-container");
-            productCard.remove();
-
-        });
+      //removing card from DOM
+      const productCard = button.closest(".cart-card-container");
+      productCard.remove();
     });
+  });
 }
-export function displayCartProductCards() {
-    const cartProductsContainer = document.querySelector(".cart-products-container");
-    const cardTemplate = cart.map((product) => {
-        return `
+export async function displayCartProductCards() {
+  const cartProductsContainer = document.querySelector(
+    ".cart-products-container",
+  );
+  const cart = getLocalStorage(CART_KEY) ?? [];
+  console.log(cart);
+
+  //Linking the product ID from localstorage to product ID from products.json
+  const cardTemplate = cart.map(async (product) => {
+    const productDetails = productsData.products.find((item) => {
+      return item.id === product.productId;
+    });
+
+    console.log("Image query:", productDetails.imageQuery);
+
+    //Obtaining the image URL
+
+    const imageURL = await getProductImage(productDetails.imageQuery);
+
+    const businessDetails = businessData.businesses.find((business) => {
+      return business.id === productDetails.businessId;
+    });
+    //linking the business ID from businesses.json to products.json
+
+    console.log("business details already linked: ", businessDetails);
+    console.log("products details: ", productDetails);
+    return `
             <article class="cart-card-container">
               <div>
                 <img
-                  src="/images/businesses/pupusas-product.webp"
+                  src="${imageURL}"
                   alt="Pupusas"
                   class="cart-product-image"
                   loading="lazy"
@@ -112,9 +140,9 @@ export function displayCartProductCards() {
                 />
               </div>
               <div class="cart-product-info">
-                <p>Horchata</p>
-                <p class="cart-biz-name">Mama Mila</p>
-                <p class="cart-product-price">$1.50</p>
+                <p>${productDetails.name}</p>
+                <p class="cart-biz-name">${businessDetails.name}</p>
+                <p class="cart-product-price">$${productDetails.price.toFixed(2)}</p>
     
                 <div class="counter-delete-container">
                   <div class="cart-btns-container">
@@ -162,9 +190,63 @@ export function displayCartProductCards() {
                 </div>
               </div>
             </article>
-    `;
-    })
-
-
-    cartProductsContainer.innerHTML = cardTemplate.join("");
+            `;
+  });
+  const resolvedCards = await Promise.all(cardTemplate);
+  cartProductsContainer.innerHTML = resolvedCards.join("");
 }
+
+export function displayOrderSummaryAside() {
+  const asideElement = document.querySelector(".order-summary");
+  if (!asideElement) return;
+  const subtotal = calculateSubtotal();
+  const cart = getLocalStorage(CART_KEY) ?? [];
+
+  const totalItems = cart.reduce((accTotal, item) => {
+    return accTotal + item.quantity;
+  }, 0);
+
+  console.log("subtotal: ", subtotal);
+  const asideTemplate = `
+          <h2>Order Summary</h2>
+          <span class="summary-divider"></span>
+          <div class="price-section">
+            <p>Items:</p>
+            <p class="cart-price">${totalItems}</p>
+          </div>
+          <div class="price-section">     
+            <p>Delivery</p>
+            <p class="cart-price">$1.23</p>
+          </div>
+          <span class="summary-divider"></span>
+          <div class="price-section"> 
+          <p class="cart-total">Subtotal</p>
+          <p class="cart-price">$${subtotal.toFixed(2)}</p>
+          </div>
+           <div class="price-section"> 
+           <p class="cart-total">Total</p>
+           <p class="cart-price">$1.23</p>
+          </div>
+          <p class="cart-final-price">$3.50</p>
+          <a class="default-button" href="/checkout-page">Proceed to checkout</a>
+    `;
+  asideElement.innerHTML = asideTemplate;
+}
+
+export function calculateSubtotal() {
+  const cart = getLocalStorage(CART_KEY) ?? [];
+
+  const subtotal = cart.reduce((accPrice, product) => {
+    //linking the id from the products to the local storage products
+    const productDetails = productsData.products.find((item) => {
+      return item.id === product.productId;
+    });
+    return accPrice + productDetails.price * product.quantity;
+  }, 0);
+  return subtotal;
+}
+
+/* export function showMiniCartItemsTotal() {
+  const cart = getLocalStorage(CART_KEY) ?? [];
+  const totalItems = cart.reduce((accItems, item) => {});
+} */

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="JustArrived cart page!" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>JustArrived! | Checkout Page</title>
+    <script type="module" src="/src/js/checkout.js"></script>
+  </head>
+
+  <body data-page="checkout">
+    <nav id="navigation"></nav>
+
+    <main>
+      <h1 class="my-cart">Checkout</h1>
+
+      <div class="checkout-grid">
+        <!-- Left column: Delivery Location and Details -->
+        <section class="checkout-container">
+          <div class="cart-biz-heading">
+            <h2>Delivery Location</h2>
+          </div>
+
+          <div class="map-container">
+            <div id="map" class="map-container"></div>
+            <div class="selected-address">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                />
+              </svg>
+              <p class="address-text"></p>
+            </div>
+          </div>
+          <h2>Delivery Details</h2>
+          <div class="delivery-details"></div>
+        </section>
+
+        <!-- Right column: Order Summary -->
+        <aside class="order-summary"></aside>
+      </div>
+    </main>
+
+    <footer class="site-footer"></footer>
+  </body>
+</html>

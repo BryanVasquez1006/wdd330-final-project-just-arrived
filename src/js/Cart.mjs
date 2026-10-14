@@ -196,10 +196,12 @@ export async function displayCartProductCards() {
   cartProductsContainer.innerHTML = resolvedCards.join("");
 }
 
-export function displayOrderSummaryAside() {
+export function displayOrderSummaryAside(deliveryFee = 0) {
   const asideElement = document.querySelector(".order-summary");
   if (!asideElement) return;
   const subtotal = calculateSubtotal();
+  const total = subtotal + deliveryFee;
+
   const cart = getLocalStorage(CART_KEY) ?? [];
 
   const totalItems = cart.reduce((accTotal, item) => {
@@ -216,7 +218,7 @@ export function displayOrderSummaryAside() {
           </div>
           <div class="price-section">     
             <p>Delivery</p>
-            <p class="cart-price">$1.23</p>
+            <p class="cart-price">$${deliveryFee.toFixed(2)}</p>
           </div>
           <span class="summary-divider"></span>
           <div class="price-section"> 
@@ -225,10 +227,10 @@ export function displayOrderSummaryAside() {
           </div>
            <div class="price-section"> 
            <p class="cart-total">Total</p>
-           <p class="cart-price">$1.23</p>
+           <p class="cart-price">$${total.toFixed(2)}</p>
           </div>
-          <p class="cart-final-price">$3.50</p>
-          <a class="default-button" href="/checkout-page">Proceed to checkout</a>
+          <p class="cart-final-price">$${total.toFixed(2)}</p>
+          <a class="default-button" href="/checkout-page/index.html">Proceed to checkout</a>
     `;
   asideElement.innerHTML = asideTemplate;
 }
@@ -246,7 +248,36 @@ export function calculateSubtotal() {
   return subtotal;
 }
 
-/* export function showMiniCartItemsTotal() {
-  const cart = getLocalStorage(CART_KEY) ?? [];
-  const totalItems = cart.reduce((accItems, item) => {});
-} */
+export function getCartBusiness() {
+  const cart = JSON.parse(localStorage.getItem("ja-cart")) ?? [];
+
+  if (cart.length === 0) {
+    return null;
+  }
+
+  const firstCartItem = cart[0];
+
+  const product = productsData.products.find((item) => {
+    return item.id === firstCartItem.productId;
+  });
+  if (!product) {
+    return null;
+  }
+
+  const sameBusiness = cart.every((cartItem) => {
+    const currentProduct = productsData.products.find((item) => {
+      return item.id === cartItem.productId;
+    });
+    return currentProduct && currentProduct.businessId === product.businessId;
+  });
+
+  if (!sameBusiness) {
+    return null;
+  }
+
+  const business = businessData.businesses.find((businessi) => {
+    return businessi.id === product.businessId;
+  });
+
+  return business ?? null;
+}

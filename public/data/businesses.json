@@ -5,6 +5,8 @@
       "name": "Agromercado Ciudad Delgado",
       "category": "Local Market",
       "location": "Ciudad Delgado",
+      "address": null,
+      "coordinates": [-89.16879078339838, 13.721605104287459],
       "description": "Local market offering fresh produce and everyday food products.",
       "image": "/images/businesses/agromercado-ciudad-delgado.webp"
     },
@@ -13,6 +15,8 @@
       "name": "K-Papas",
       "category": "Fast Food",
       "location": "Ciudad Delgado",
+      "address": "Calle El Comercio 9, San Salvador, El Salvador",
+      "coordinates": [-89.16832865284132, 13.716739607651744],
       "description": "Local food business specializing in loaded fries and fast food.",
       "image": "/images/businesses/k-papas-ciudad-delgado.webp"
     },
@@ -21,6 +25,8 @@
       "name": "La Mera Birria",
       "category": "Mexican Food",
       "location": "Ciudad Delgado",
+      "address": "Calle Morazán, Ciudad Delgado, San Salvador, El Salvador",
+      "coordinates": [-89.16327026682512, 13.72056953322088],
       "description": "Local food business specializing in birria-inspired dishes.",
       "image": "/images/businesses/la-mera-birria-ciudad-delgado.webp"
     },
@@ -29,6 +35,8 @@
       "name": "Pupusería Mama Mila",
       "category": "Salvadoran Food",
       "location": "Ciudad Delgado",
+      "address": "Avenida Juan Bertiz, frente a la Placita de Ciudad Delgado, local 5",
+      "coordinates": [-89.16898, 13.72114],
       "description": "Local food business offering traditional Salvadoran dishes.",
       "image": "/images/businesses/pupuseria-mama-mila.webp"
     }
